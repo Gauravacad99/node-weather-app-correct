@@ -22,7 +22,7 @@ element.addEventListener('submit', (e) => {
     e.preventDefault() // stop the form being submitted
     message1.textContent = 'loading message'
     const location = search.value
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 return message1.textContent = 'Unable to find location. try another search'

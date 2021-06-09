@@ -5,6 +5,7 @@ const geocode = require('./geocode.js')
 const forecast = require('./forecast.js')
 const publicDirectoryPath = path.join(__dirname, '../public')
 
+const port = process.env.PORT || 3000
 app.use(express.static(publicDirectoryPath))
 
 
@@ -100,7 +101,7 @@ app.get('*', (req, res) => {
 // error 404 end
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
 
 
     console.log('Server is up on port 3000.')
