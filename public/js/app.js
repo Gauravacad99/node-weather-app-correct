@@ -1,4 +1,4 @@
-console.log('client side javascript is here')
+
 // fetch('http://localhost:3000/weather?address=jaipur').then((response) => {
 //     response.json().then((data) => {
 //         if (data.error) {
